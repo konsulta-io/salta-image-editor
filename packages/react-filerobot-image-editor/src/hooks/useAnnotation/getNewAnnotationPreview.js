@@ -12,6 +12,7 @@ const annotationsNamesToKonvaClasses = {
   [TOOLS_IDS.IMAGE]: Konva.Image,
   [TOOLS_IDS.TEXT]: Konva.Text,
   [TOOLS_IDS.ARROW]: Konva.Arrow,
+  [TOOLS_IDS.PIXELATE]: Konva.Rect,
 };
 
 const ANNOTATIONS_WITH_POINTS = [TOOLS_IDS.LINE, TOOLS_IDS.ARROW];
@@ -50,6 +51,7 @@ export const dimensToProperAnnotationDimens = (
 
   switch (annotationName) {
     case TOOLS_IDS.RECT:
+    case TOOLS_IDS.PIXELATE:
       if (isShiftKeyPressed) {
         newAnnotationDimens.width = Math.sqrt(
           absWidth * absWidth + absHeight * absHeight,

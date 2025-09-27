@@ -45,6 +45,9 @@ export default {
   [TOOLS_IDS.RECT]: {
     cornerRadius: 0,
   },
+  [TOOLS_IDS.PIXELATE]: {
+    pixelateIntensity: 10,
+  },
   [TOOLS_IDS.ELLIPSE]: {},
   [TOOLS_IDS.POLYGON]: {
     sides: 3,

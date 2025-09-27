@@ -71,7 +71,7 @@ const App = () => {
 
   const showTabsDrawer = window.matchMedia('(max-width: 760px)').matches;
 
-  const [observeResize, unobserveElement] = useResizeObserver();
+  const [observeElement, unobserveElement] = useResizeObserver();
   const [rootSize, setRootSize] = useState({
     width: undefined,
     height: undefined,
@@ -246,7 +246,7 @@ const App = () => {
   useEffect(() => {
     let isUnmounted = false;
     if (observePluginContainerSize && pluginRootRef.current) {
-      observeResize(pluginRootRef.current.parentNode, ({ width, height }) =>
+      observeElement(pluginRootRef.current.parentNode, ({ width, height }) =>
         setRootSize({ width, height }),
       );
     } else if (rootSize.width && rootSize.height && !isUnmounted) {

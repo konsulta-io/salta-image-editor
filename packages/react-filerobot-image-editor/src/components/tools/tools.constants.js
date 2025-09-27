@@ -19,6 +19,7 @@ import { ArrowButton, ArrowOptions } from './Arrow';
 import { PolygonButton, PolygonOptions } from './Polygon';
 import { Resize } from './Resize';
 import { Watermark } from './Watermark';
+import { PixelateButton, PixelateOptions } from './Pixelate';
 
 export const TOOLS_ITEMS = {
   [TOOLS_IDS.CROP]: {
@@ -117,6 +118,11 @@ export const TOOLS_ITEMS = {
     id: TOOLS_IDS.RESIZE,
     Item: Resize,
   },
+  [TOOLS_IDS.PIXELATE]: {
+    id: TOOLS_IDS.PIXELATE,
+    Item: PixelateButton,
+    ItemOptions: PixelateOptions,
+  },
 };
 
 export const TABS_TOOLS = {
@@ -144,6 +150,7 @@ export const TABS_TOOLS = {
     TOOLS_IDS.PEN,
     TOOLS_IDS.LINE,
     TOOLS_IDS.ARROW,
+    TOOLS_IDS.PIXELATE,
   ],
   [TABS_IDS.RESIZE]: [TOOLS_IDS.RESIZE],
 };

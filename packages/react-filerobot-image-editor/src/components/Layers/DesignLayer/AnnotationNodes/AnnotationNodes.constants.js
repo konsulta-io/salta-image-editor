@@ -7,6 +7,7 @@ import TextNode from './TextNode';
 import ImageNode from './ImageNode';
 import LineNode from './LineNode';
 import ArrowNode from './ArrowNode';
+import PixelateNode from './PixelateNode';
 
 export const ANNOTATION_NAMES_TO_COMPONENT = {
   [TOOLS_IDS.RECT]: RectNode,
@@ -17,4 +18,5 @@ export const ANNOTATION_NAMES_TO_COMPONENT = {
   [TOOLS_IDS.LINE]: LineNode,
   [TOOLS_IDS.ARROW]: ArrowNode,
   [TOOLS_IDS.PEN]: LineNode,
+  [TOOLS_IDS.PIXELATE]: PixelateNode,
 };

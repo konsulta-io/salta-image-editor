@@ -67,6 +67,8 @@ export default {
   sides: 'Sides',
   rectangleTool: 'Rectangle',
   cornerRadius: 'Corner Radius',
+  pixelateTool: 'Pixelate',
+  pixelateIntensity: 'Pixelate Intensity',
   resizeWidthTitle: 'Width in pixels',
   resizeHeightTitle: 'Height in pixels',
   toggleRatioLockTitle: 'Toggle ratio lock',
